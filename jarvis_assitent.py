@@ -40,7 +40,7 @@ def takecommand():
 
     except Exception as e:
         print("say that again please...")
-        return "None"
+        exit()
 
     return query
 def check_query(query):
@@ -70,8 +70,8 @@ def check_query(query):
          speak("my name is alexa and i am created by sir vishesh agrahari!! how can i help you..")
          query_again()
     else:
-        print("okk! thank you")
-        speak("okk! thank you")
+        print("ok! thank you")
+        speak("ok! thank you")
         exit()
 
 
@@ -83,8 +83,8 @@ def query_again():
     speak("would you like any more help from me..?")
     query = takecommand().lower()
     if 'no' in query:
-        print("okk! thank you")
-        speak("okk! thank you")
+        print("ok! thank you")
+        speak("ok! thank you")
         exit()
     else:
        check_query(query)
